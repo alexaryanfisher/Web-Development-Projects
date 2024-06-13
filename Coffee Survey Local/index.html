@@ -1,0 +1,136 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html>
+  <meta charset="UTF-8">
+  <head>
+    <title>Coffee Lovers Survey</title>
+  </head>
+  <link rel="stylesheet" href="styles.css" >
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Please fill out the below survey form to provide intel to what are the best coffee places in town.</p>
+  </body>
+  <form id="survey-form" action="mailto: alexaryanfish@gmail.com" method="GET">
+    <fieldset>
+      <label for="name" id="name-label">Enter your Name:<input id="name" type="text" required name="name" placeholder="First Name Last Name"/></label>
+      <label for="email"
+      id="email-label">Enter your Email:<input id="email" required name= "email" type="email" placeholder="i.e. jane.doe@email.com"/></label>
+      <label for="number" id="number-label">Enter your Age: <input id="number" type="number" name="age" min="13" max="120" placeholder="Age (Yrs)."/></label>
+    </fieldset>
+    <fieldset>
+      <legend>Please select your Gender.</legend>
+      <label><input name="gender-type" value="1" checked type="radio"/> Female</label>
+      <label><input name="gender-type" value="2" type="radio"/> Male</label>
+      <label><input name="gender-type" value="3" type="radio"/> NonBinary</label>
+    </fieldset>
+    <fieldset>
+      <legend>Which local coffee shop is your favorite?</legend>
+      <label>
+        <select class="dropdown" id="dropdown">
+          <option value="">[select one]</option>
+          <option value="1">Port City Java</option>
+          <option value="2">Dunkin'</option>
+          <option value="3">Starbucks</option>
+          <option value="4">Circle K</option>
+          <option value="5">7Eleven</option>
+        </select>
+        </label>
+        </fieldset>
+        <fieldset>
+          <legend>What features make this shop your favorite? (Select all that apply.)
+          </legend>
+        <label class="features">
+          <input  class="features" name="shop-features" value="1" checked type="checkbox"/> Location</label>
+        <label class="features">
+          <input  class="features" name="shop-features" value="2" type="checkbox"/> Coffee Size</label>
+          <label class="features">
+          <input  class="features" name="shop-features" value="3" type="checkbox"/> Coffee Flavors</label>
+          <label class="features">
+          <input name="shop-features" value="4" type="checkbox"/> Staff</label>
+          <label class="features"> 
+          <input name="shop-features" value="5" type="checkbox"/> Price</label>
+      </fieldset>
+    <fieldset>
+      <legend>What is in your favorite cup of "joe"?</legend>
+      <label for="favorite-coffee"> 
+        <textarea id="favorite-coffee" rows="4" cols="30">
+        </textarea>
+      </label>
+      <label for="submit"><input id="submit" type="Submit"></label>
+    </fieldset>
+  </form>
+</html>
+
+** end of undefined **
+
+** start of undefined **
+
+form{
+  padding: 2rem;
+  margin: 0 auto;
+  text-align: left;
+  font-family: Times New Roman;
+  font-size: 16px;
+}
+
+body{
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  background-color: #123;
+  color:#fff;
+}
+h1, p {
+  margin: 0 auto;
+  text-align: center;
+  font-family: Arial, Tahoma;
+  font-size: 18px 12px;
+}
+
+label {
+  display: block;
+  margin: 0 auto;
+  padding: 0.50rem;
+  width: 80%;
+}
+
+.features{
+  width: unset;
+  display: inline;
+  margin: 0 0 0 60;
+  padding: 0.05rem;
+  text-align: center;
+}
+
+.dropdown {
+  width: 80%;
+  padding: 0.05rem;
+}
+
+input[type="text"]{
+  width: unset;
+  width: 70%;
+}
+
+input[type="number"]{
+  width: unset;
+  width: 70%;
+}
+input[type="email"]{
+  width: unset;
+  width: 70%;
+}
+
+textarea{
+  display: block;
+  margin: 0.75rem 0;
+  width: 80%;
+  background-color: f8f8f8;
+  text-align: left;
+  color: #fff;
+  font-size: 16px;
+}
+
+** end of undefined **
+
